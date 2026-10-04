@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudad | Pagina Oficial de Turismo de la Ciudad Valiandar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header>
-         <h1>
-                Valiandar City
-        </h1>
-        <nav>
+          <a href="./index.html" rel="noopener noreferrer" class="logo">Valiandar City</a>
+        <nav class="nav-principal">
              <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./ciudad.html">Ciudad</a></li>
@@ -18,10 +20,13 @@
                 <li><a href="./contactos.html">Contactos</a></li>
             </ul>
         </nav>
-        <br>
-        <hr>
+        <div class="header-top">
+                <h1>Página Oficial de Turismo de la Ciudad Valiandar</h1>
+            </div>
     </header>
-    <main>
+    <div class="contenido">
+
+            <main>
         <section id="ciudad">
             <h2>Nuestra Ciudad</h2>
             <img src="https://thumbs.dreamstime.com/b/foto-blanco-y-negro-del-vintage-de-la-sepia-edificios-madera-occidentales-viejos-en-st-elmo-gold-mine-ghost-town-colorado-los-e-u-141699254.jpg" alt="foto-antigua-de-valiandar" width="800" height="534">
@@ -120,7 +125,8 @@
             <p>Los habitantes de Valiandar tienen varias tradiciones que forman parte de la identidad local. Una de las más importantes es en año nuevo, una tradición en la que las familias se reúnen en las plazas durante el primer amanecer del año. Disfrutan de las lindas vistas y se divierten viendo a artistas urbanos. </p>
         </section>
     </main>
-    <aside class="nav-lateral">
+    <aside id="nav-lateral">
+        <section class="nav-lateral">
         <h3>¿Que te interesa?</h3>
         <nav>
             <ul>
@@ -130,23 +136,29 @@
                 <li><a href="#barrios-zonas">Barrios y Zonas Más Populares</a></li>
                 <li><a href="#costumbres-tradiciones">Costumbres y Tradiciones</a></li>
             </ul>
-        </nav>
+        </nav> 
+        </section>
     </aside>
-    <footer>
-        <div id="contactos">
+
+    </div>
+
+    <footer>        
+        <div class="footer">
+         <section class="contactos">
             <h3>Contactos</h3>
         <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
         <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
         <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
-        </div>
-        <div id="redes-sociales">
+         </section>
+        <section class="redes-sociales">
             <h3>Redes Sociales</h3>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
             <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
-        </div>
+        </section>
 
-        <em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em>
+        </div>
+         <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
     </footer>
 </body>
 </html>
