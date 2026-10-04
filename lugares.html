@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugares | Pagina Oficial de Turismo de la Ciudad Valiandar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header>
-         <h1>
-                Valiandar City
-        </h1>
-        <nav>
+         <a href="./index.html" rel="noopener noreferrer" class="logo">Valiandar City</a>
+        <nav class="nav-principal">
              <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./ciudad.html">Ciudad</a></li>
@@ -18,10 +20,12 @@
                 <li><a href="./contactos.html">Contactos</a></li>
             </ul>
         </nav>
-        <br>
-        <hr>
+        <div class="header-top">
+                <h1>Página Oficial de Turismo de la Ciudad Valiandar</h1>
+            </div>
     </header>
-    <main>
+    <div class="contenido">
+        <main>
         <section>
             <h2>Nuestros Lugares Más Populares</h2>
             <img src="https://images.unsplash.com/photo-1680789337218-aea1b03ccc41?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdWRhZCUyMGRlJTIwbW9udGElQzMlQjFhfGVufDB8fDB8fHww" alt="foto-de-los-barrios" width="800" height="534">
@@ -63,10 +67,23 @@
                         <p><strong>¿Por qué visitarlo?</strong> Es el punto panorámico más elevado de todo Valiandar y una visita obligada para quienes disfrutan de la naturaleza.</p>
                 </article>
         </section>
-
-
     </main>
-    <aside id="guias">
+     <aside id="nav-lateral">
+        <section class="nav-lateral">
+            <h3>¿Que te interesa?</h3>
+            <nav>
+                <ul>
+                    <li><a href="#fuerte-bardegar">El Fuerte de Bardergar</a></li>
+                    <li><a href="#parque-vista-alegre">Parque Vista Alegre</a></li>
+                    <li><a href="#puente-cortazar">Puente Cortazar</a></li>
+                    <li><a href="#monte-mirador">Mirador del Monte</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </aside>
+    </div>
+    <aside class="guias">
         <h3>Visitas guiadas por Valiandar</h3>
         <h4>¡Descubrí Valiandar acompañado por un guía local!</h4>
         <p>Con nuestras visitas guiadas podrás conocer los principales lugares históricos, descubrir historias y leyendas de la ciudad y probar algunas de las comidas tradicionales de la región.</p>
@@ -79,32 +96,23 @@
         <h4>Actividades y Eventos</h4>
         <p>Durante todo el año pueden encontrarse actividades como conciertos en plazas, exposiciones de arte, ferias gastronómicas, competencias deportivas y excursiones por los senderos de montaña.</p>
     </aside>
-     <aside class="nav-lateral">
-        <h3>¿Que te interesa?</h3>
-        <nav>
-            <ul>
-                <li><a href="#fuerte-bardegar">El Fuerte de Bardergar</a></li>
-                <li><a href="#parque-vista-alegre">Parque Vista Alegre</a></li>
-                <li><a href="#puente-cortazar">Puente Cortazar</a></li>
-                <li><a href="#monte-mirador">Mirador del Monte</a></li>
-            </ul>
-        </nav>
-    </aside>
     <footer>
-         <div id="contactos">
+        <div class="footer">
+         <section class="contactos">
             <h3>Contactos</h3>
         <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
         <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
         <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
-        </div>
-        <div id="redes-sociales">
+         </section>
+        <section class="redes-sociales">
             <h3>Redes Sociales</h3>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
             <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
-        </div>
+        </section>
 
-        <em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em>
+        </div>
+         <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
     </footer>
 </body>
 </html>
