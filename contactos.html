@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos | Pagina Oficial de Turismo de la Ciudad Valiandar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header>
-         <h1>
-                Valiandar City
-        </h1>
-        <nav>
+          <a href="./index.html" rel="noopener noreferrer" class="logo">Valiandar City</a>
+        <nav class="nav-principal">
              <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./ciudad.html">Ciudad</a></li>
@@ -18,64 +20,70 @@
                 <li><a href="./contactos.html">Contactos</a></li>
             </ul>
         </nav>
-        <br>
-        <hr>
+        <div class="header-top">
+                <h1>Pagina Oficial de Turismo de la Ciudad Valiandar</h1>
+            </div>
     </header>
-    <main>
-        <section>
-            <h2>Contactos y Asistencias Turisticas</h2>
-            <img src="https://img.magnific.com/foto-gratis/companeros-trabajo-felices-sonriendo-haciendo-contacto-visual-mientras-estan-sentados-su-escritorio-centro-llamadas-colegas-ejecutivos-esperando-recibir-llamadas-clientes-soporte-tecnico_662251-482.jpg?semt=ais_hybrid&w=740&q=80" alt="foto-de-empleados" width="800" height="534">
-        </section>
-        <section id="tabla-contactos">
-            <h3>Informacion de Contacto</h3>
-           <table>
-                    <thead>
-                        <tr>
-                            <th>Centro de Turismo de Valiandar</th>
-                            <th>Información</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Direccion</td>
-                            <td>Andalgala 123, Centro Histórico</td>
-                        </tr>
-                        <tr>
-                            <td>Telefono</td>
-                            <td> <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">+54 9 11 40203928</a></td>
-                        </tr>
-                        <tr>
-                            <td>Correo</td>
-                            <td><a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a></td>
-                        </tr>
-                        <tr>
-                            <td>Horario</td>
-                            <td>Lunes a Sábado de 9:00 AM - 6:00 PM</td>
-                        </tr>
-                    </tbody>
-                </table>
-        </section>
-        <br>
-        <section id="redes-sociales">
-            <h3>Redes Sociales</h3>
-            <ul>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a></li>
-            </ul>
-        </section>
-    </main>
-    <aside id="nav-lateral">
-        <h3>¿Que te interesa?</h3>
-        <ul>
-            <li><a href="#tabla-contactos">Tabla de Contactos</a></li>
-            <li><a href="#redes-sociales">Redes Sociales</a></li>
-        </ul>
-    </aside>
-    <hr>
+    <div class="contenido">
+        <main>
+            <section>
+                <h2>Contactos y Asistencias Turisticas</h2>
+                <img src="https://img.magnific.com/foto-gratis/companeros-trabajo-felices-sonriendo-haciendo-contacto-visual-mientras-estan-sentados-su-escritorio-centro-llamadas-colegas-ejecutivos-esperando-recibir-llamadas-clientes-soporte-tecnico_662251-482.jpg?semt=ais_hybrid&w=740&q=80" alt="foto-de-empleados" width="800" height="534">
+            </section>
+            <section id="tabla-contactos">
+                <h3>Informacion de Contacto</h3>
+            <table>
+                        <thead>
+                            <tr>
+                                <th>Centro de Turismo de Valiandar</th>
+                                <th>Información</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Direccion</td>
+                                <td>Andalgala 123, Centro Histórico</td>
+                            </tr>
+                            <tr>
+                                <td>Telefono</td>
+                                <td> <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">+54 9 11 40203928</a></td>
+                            </tr>
+                            <tr>
+                                <td>Correo</td>
+                                <td><a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Horario</td>
+                                <td>Lunes a Sábado de 9:00 AM - 6:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+            <br>
+            <section id="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a></li>
+                </ul>
+            </section>
+        </main>
+        <aside id="nav-lateral">
+            <section class="nav-lateral">
+                <h3>¿Que te interesa?</h3>
+                    <ul>
+                        <li><a href="#tabla-contactos">Tabla de Contactos</a></li>
+                        <li><a href="#redes-sociales">Redes Sociales</a></li>
+                    </ul>
+            </section>
+        </aside>
+    </div>
+    
     <footer>
     
         <em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em>
     </footer>
 </body>
 </html>
+
