@@ -6,159 +6,177 @@
     <title>Ciudad | Pagina Oficial de Turismo de la Ciudad Valiandar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+
     <header>
-          <a href="./index.html" rel="noopener noreferrer" class="logo">Valiandar City</a>
-        <nav class="nav-principal">
-             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./ciudad.html">Ciudad</a></li>
-                <li><a href="./lugares.html">Lugares</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
-        <div class="header-top">
-                <h1>Página Oficial de Turismo de la Ciudad Valiandar</h1>
-            </div>
+        <div class="header-content">
+            <a href="./index.html" class="logo">Valiandar City</a>
+            <nav class="nav-principal" aria-label="Principal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./ciudad.html" class="activo">Ciudad</a></li>
+                    <li><a href="./lugares.html">Lugares</a></li>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="contenido">
 
-            <main>
-        <section id="ciudad">
-            <h2>Nuestra Ciudad</h2>
-            <img src="https://thumbs.dreamstime.com/b/foto-blanco-y-negro-del-vintage-de-la-sepia-edificios-madera-occidentales-viejos-en-st-elmo-gold-mine-ghost-town-colorado-los-e-u-141699254.jpg" alt="foto-antigua-de-valiandar" width="800" height="534">
-        </section>
-        <section id="historia">
-            <h3>Historia e Identidad</h3>
-            <p>Según los registros históricos de Valiandar, la ciudad fue fundada en el año 1768 por Eduardo Manuel Vastidar, luego de haber cruzado la Cordillera De Bardegar con su grupo de comerciantes y exploradores. Ahi establecieron un pequeño asentamiento junto al Río Vandal que poco a poco fue creciendo. A dia de hoy, mas de 250 años después, Valiandar es una de las ciudades mas visitadas del país.</p>
-            <p>Durante sus primeros años, Valiandar fue un punto de comercio muy importante para las comunidades de la region. Debido a esto fue que la ciudad construyo rutas importantes en las montañas, para facilitar la llegada de nuevos mercaderes y turistas. En consecuencia Validar crecio rapidamente.</p>
-            <p>En 1803 se descubrio una de las minas de diamantes mas grandes de la zona. Este hallazgo impulso exponencialmente la economía de la ciudad. Hizo que se invierta en maquinarias e infraestructura y garantizo un futuro brillante para la ciudad. Historiados dicen que esta es una de las razones por las cuales Valiandar se hizo tan conocida en esa epoca.</p>
-            <p>Durante el siglo XIX se construyeron muchos de los edificios que actualmente forman parte del centro histórico. En el siglo XX la ciudad comenzó a expandirse hacia los valles cercanos y se convirtió en un importante destino turístico.</p>
-            <p>Actualmente, Valiandar es conocida por mantener un equilibrio entre su patrimonio histórico y el desarrollo moderno.</p>
-        </section>
-        <section id="caracteristicas">
-            <h3>Caracteristicas Principales</h3>
-            <p>Valiandar está construida alrededor del Río Vandal y se extiende desde las zonas montañosas del norte hasta las grandes llanuras del sur. La ciudad cuenta con amplias áreas verdes, un centro histórico, zonas residenciales, áreas comerciales y sectores dedicados al turismo.</p>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-sub">Página Oficial de Turismo de la Ciudad Valiandar</p>
+            <h1>Nuestra Ciudad</h1>
+            <a href="#contenido" class="boton">Conocé la ciudad</a>
+        </div>
+    </section>
 
-        <section id="datos">
-            <h3>Datos Importantes de Valiandar</h3>
-            <div id="tabla-datos">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>DATOS</th>
-                            <th>INFORMACIÓN</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Población</td>
-                            <td>482.700 habitantes</td>
-                        </tr>
-                        <tr>
-                            <td>Superficie</td>
-                            <td>312 km²</td>
-                        </tr>
-                        <tr>
-                            <td>Año de fundación</td>
-                            <td>1768</td>
-                        </tr>
-                        <tr>
-                            <td>Clima</td>
-                            <td>Templado de montaña</td>
-                        </tr>
-                        <tr>
-                            <td>Gentilicio</td>
-                            <td>Valiandarense</td>
-                        </tr>
-                        <tr>
-                            <td>Promedio de turistas al año</td>
-                            <td>256.000</td>
-                        </tr>
-                        <tr>
-                            <td>Areas Verdes</td>
-                            <td>27% de la superficie urbana</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <section id="barrios-zonas">
-            <h3>Barrios y Zonas Más Populares</h3>
-
-            <article class="barrio">
-                <h4>Centro Histórico</h4>
-                <p>Aquí es donde se encuentra el corazón de la ciudad, donde podés apreciar edificaciones históricas con más de dos siglos de antigüedad. Cuenta con plazas, un museo general llamado <em>El Histoseo</em> y restaurantes tradicionales.</p>
-            </article>
-
-            <article class="barrio">
-                <h4>Barrio Andares</h4>
-                <p>Uno de los barrios que aún mantiene la estética antigua de la ciudad, mostrando las técnicas arquitectónicas de épocas pasadas.</p>
-            </article>
-
-            <article class="barrio">
-                <h4>Los Bosques del Norte</h4>
-                <p>Una zona excepcional para quienes disfrutan de la naturaleza y el entorno rural. Ubicado al pie de la montaña, es ideal para realizar actividades al aire libre.</p>
-            </article>
-
-            <article class="barrio">
-                <h4>Barrio Domingo</h4>
-                <p>Un barrio especialmente pensado para turistas. Cuenta con varios hoteles de muy buena puntuación y plazas donde se organizan ferias de todo tipo.</p>
-            </article>
-
-            <article class="barrio">
-                <h4>Barrio Vista Alegre</h4>
-                <p>Es uno de los barrios más modernos de la ciudad. Alberga uno de los shoppings más completos de la región, además de restaurantes gourmet y zonas hoteleras.</p>
-            </article>
-
-            <article class="barrio">
-                <h4>El Mirador</h4>
-                <p>Ubicado en la ladera de la montaña, es una zona muy concurrida por los visitantes debido a sus increíbles panorámicas de toda la ciudad.</p>
-            </article>
-        </section>
-        <section id="costumbres-tradiciones">
-            <h3>Costumbres y Tradiciones</h3>
-            <p>Los habitantes de Valiandar tienen varias tradiciones que forman parte de la identidad local. Una de las más importantes es en año nuevo, una tradición en la que las familias se reúnen en las plazas durante el primer amanecer del año. Disfrutan de las lindas vistas y se divierten viendo a artistas urbanos. </p>
-        </section>
-    </main>
-    <aside id="nav-lateral">
-        <section class="nav-lateral">
-        <h3>¿Que te interesa?</h3>
-        <nav>
-            <ul>
-                <li><a href="#historia">Historia e Identidad</a></li>
-                <li><a href="#caracteristicas">Caracteristicas Principales</a></li>
-                <li><a href="#datos">Datos Importantes de Valiandar</a></li>
-                <li><a href="#barrios-zonas">Barrios y Zonas Más Populares</a></li>
-                <li><a href="#costumbres-tradiciones">Costumbres y Tradiciones</a></li>
-            </ul>
-        </nav> 
-        </section>
-    </aside>
-
+    <div class="redes-fijas">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener" aria-label="TikTok">TT</a>
     </div>
 
-    <footer>        
-        <div class="footer">
-         <section class="contactos">
-            <h3>Contactos</h3>
-        <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
-        <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
-        <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
-         </section>
-        <section class="redes-sociales">
-            <h3>Redes Sociales</h3>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
-        </section>
+    <div class="contenido">
+        <main>
+            <section id="ciudad">
+                <img src="https://thumbs.dreamstime.com/b/foto-blanco-y-negro-del-vintage-de-la-sepia-edificios-madera-occidentales-viejos-en-st-elmo-gold-mine-ghost-town-colorado-los-e-u-141699254.jpg" alt="foto-antigua-de-valiandar" width="800" height="534">
+            </section>
 
+            <section id="historia">
+                <h3>Historia e Identidad</h3>
+                <p>Según los registros históricos de Valiandar, la ciudad fue fundada en el año 1768 por Eduardo Manuel Vastidar, luego de haber cruzado la Cordillera De Bardegar con su grupo de comerciantes y exploradores. Ahi establecieron un pequeño asentamiento junto al Río Vandal que poco a poco fue creciendo. A dia de hoy, mas de 250 años después, Valiandar es una de las ciudades mas visitadas del país.</p>
+                <p>Durante sus primeros años, Valiandar fue un punto de comercio muy importante para las comunidades de la region. Debido a esto fue que la ciudad construyo rutas importantes en las montañas, para facilitar la llegada de nuevos mercaderes y turistas. En consecuencia Validar crecio rapidamente.</p>
+                <p>En 1803 se descubrio una de las minas de diamantes mas grandes de la zona. Este hallazgo impulso exponencialmente la economía de la ciudad. Hizo que se invierta en maquinarias e infraestructura y garantizo un futuro brillante para la ciudad. Historiados dicen que esta es una de las razones por las cuales Valiandar se hizo tan conocida en esa epoca.</p>
+                <p>Durante el siglo XIX se construyeron muchos de los edificios que actualmente forman parte del centro histórico. En el siglo XX la ciudad comenzó a expandirse hacia los valles cercanos y se convirtió en un importante destino turístico.</p>
+                <p>Actualmente, Valiandar es conocida por mantener un equilibrio entre su patrimonio histórico y el desarrollo moderno.</p>
+            </section>
+
+            <section id="caracteristicas">
+                <h3>Caracteristicas Principales</h3>
+                <p>Valiandar está construida alrededor del Río Vandal y se extiende desde las zonas montañosas del norte hasta las grandes llanuras del sur. La ciudad cuenta con amplias áreas verdes, un centro histórico, zonas residenciales, áreas comerciales y sectores dedicados al turismo.</p>
+            </section>
+
+            <section id="datos">
+                <h3>Datos Importantes de Valiandar</h3>
+                <div id="tabla-datos">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DATOS</th>
+                                <th>INFORMACIÓN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Población</td>
+                                <td>482.700 habitantes</td>
+                            </tr>
+                            <tr>
+                                <td>Superficie</td>
+                                <td>312 km²</td>
+                            </tr>
+                            <tr>
+                                <td>Año de fundación</td>
+                                <td>1768</td>
+                            </tr>
+                            <tr>
+                                <td>Clima</td>
+                                <td>Templado de montaña</td>
+                            </tr>
+                            <tr>
+                                <td>Gentilicio</td>
+                                <td>Valiandarense</td>
+                            </tr>
+                            <tr>
+                                <td>Promedio de turistas al año</td>
+                                <td>256.000</td>
+                            </tr>
+                            <tr>
+                                <td>Areas Verdes</td>
+                                <td>27% de la superficie urbana</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="barrios-zonas">
+                <h3>Barrios y Zonas Más Populares</h3>
+
+                <article class="barrio">
+                    <h4>Centro Histórico</h4>
+                    <p>Aquí es donde se encuentra el corazón de la ciudad, donde podés apreciar edificaciones históricas con más de dos siglos de antigüedad. Cuenta con plazas, un museo general llamado <em>El Histoseo</em> y restaurantes tradicionales.</p>
+                </article>
+
+                <article class="barrio">
+                    <h4>Barrio Andares</h4>
+                    <p>Uno de los barrios que aún mantiene la estética antigua de la ciudad, mostrando las técnicas arquitectónicas de épocas pasadas.</p>
+                </article>
+
+                <article class="barrio">
+                    <h4>Los Bosques del Norte</h4>
+                    <p>Una zona excepcional para quienes disfrutan de la naturaleza y el entorno rural. Ubicado al pie de la montaña, es ideal para realizar actividades al aire libre.</p>
+                </article>
+
+                <article class="barrio">
+                    <h4>Barrio Domingo</h4>
+                    <p>Un barrio especialmente pensado para turistas. Cuenta con varios hoteles de muy buena puntuación y plazas donde se organizan ferias de todo tipo.</p>
+                </article>
+
+                <article class="barrio">
+                    <h4>Barrio Vista Alegre</h4>
+                    <p>Es uno de los barrios más modernos de la ciudad. Alberga uno de los shoppings más completos de la región, además de restaurantes gourmet y zonas hoteleras.</p>
+                </article>
+
+                <article class="barrio">
+                    <h4>El Mirador</h4>
+                    <p>Ubicado en la ladera de la montaña, es una zona muy concurrida por los visitantes debido a sus increíbles panorámicas de toda la ciudad.</p>
+                </article>
+            </section>
+
+            <section id="costumbres-tradiciones">
+                <h3>Costumbres y Tradiciones</h3>
+                <p>Los habitantes de Valiandar tienen varias tradiciones que forman parte de la identidad local. Una de las más importantes es en año nuevo, una tradición en la que las familias se reúnen en las plazas durante el primer amanecer del año. Disfrutan de las lindas vistas y se divierten viendo a artistas urbanos.</p>
+            </section>
+        </main>
+
+        <aside id="nav-lateral">
+            <section class="nav-lateral">
+                <h3>¿Que te interesa?</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#historia">Historia e Identidad</a></li>
+                        <li><a href="#caracteristicas">Caracteristicas Principales</a></li>
+                        <li><a href="#datos">Datos Importantes de Valiandar</a></li>
+                        <li><a href="#barrios-zonas">Barrios y Zonas Más Populares</a></li>
+                        <li><a href="#costumbres-tradiciones">Costumbres y Tradiciones</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <section class="contactos">
+                <h3>Contactos</h3>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
+                <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
+                <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
+            </section>
+            <section class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
+            </section>
         </div>
-         <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
+        <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
