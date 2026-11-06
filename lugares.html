@@ -6,113 +6,134 @@
     <title>Lugares | Pagina Oficial de Turismo de la Ciudad Valiandar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Englebert&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+
     <header>
-         <a href="./index.html" rel="noopener noreferrer" class="logo">Valiandar City</a>
-        <nav class="nav-principal">
-             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./ciudad.html">Ciudad</a></li>
-                <li><a href="./lugares.html">Lugares</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
-        <div class="header-top">
-                <h1>Página Oficial de Turismo de la Ciudad Valiandar</h1>
-            </div>
+        <div class="header-content">
+            <a href="./index.html" class="logo">Valiandar City</a>
+            <nav class="nav-principal" aria-label="Principal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./ciudad.html">Ciudad</a></li>
+                    <li><a href="./lugares.html" class="activo">Lugares</a></li>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-sub">Página Oficial de Turismo de la Ciudad Valiandar</p>
+            <h1>Nuestros Lugares Más Populares</h1>
+            <a href="#contenido" class="boton">Explorá los lugares</a>
+        </div>
+    </section>
+
+    <div class="redes-fijas">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener" aria-label="TikTok">TT</a>
+    </div>
+
     <div class="contenido">
         <main>
-        <section>
-            <h2>Nuestros Lugares Más Populares</h2>
-            <img src="https://images.unsplash.com/photo-1680789337218-aea1b03ccc41?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdWRhZCUyMGRlJTIwbW9udGElQzMlQjFhfGVufDB8fDB8fHww" alt="foto-de-los-barrios" width="800" height="534">
-        </section>
-        
-        <section id="lugares-de-interes">
-            <h2>Lugares de Interés</h2>
+            <section>
+                <img src="https://images.unsplash.com/photo-1680789337218-aea1b03ccc41?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdWRhZCUyMGRlJTIwbW9udGElQzMlQjFhfGVufDB8fDB8fHww" alt="foto-de-los-barrios" width="800" height="534">
+            </section>
+
+            <section id="lugares-de-interes">
+                <h3>Lugares de Interés</h3>
+
                 <article id="fuerte-bardegar">
-                        <h3>El Fuerte de Bardegar</h3>
-                        <img src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2020/12/04/5fcc3e635adc9.jpeg" alt="foto-fuerte-bardegar" width="800" height="534">
-                        <p>Construido en 1812 sobre una colina, El Fuerte de Bardegar es uno de los edificios históricos más importantes de la ciudad. Aquí podrás nutrirte de la antigua historia local, desde los años 1800 hasta la actualidad. Cuenta con un museo tematizado y vistas increíbles desde sus murallas.</p>
-                        <p><strong>Ubicación:</strong> Ubicado sobre la Colina Helen, lo que garantiza grandes vistas panorámicas en cualquier época del año.</p>
-                        <p><strong>Actividades:</strong> Visitas guiadas al museo histórico, fotografías con vista panorámica y charlas culturales.</p>
-                        <p><strong>¿Por qué visitarlo?</strong> Es el mejor lugar para comprender la historia de Valiandar y obtener un panorama amplio para planificar tus siguientes destinos.</p>
+                    <h4>El Fuerte de Bardegar</h4>
+                    <img src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2020/12/04/5fcc3e635adc9.jpeg" alt="foto-fuerte-bardegar" width="800" height="534">
+                    <p>Construido en 1812 sobre una colina, El Fuerte de Bardegar es uno de los edificios históricos más importantes de la ciudad. Aquí podrás nutrirte de la antigua historia local, desde los años 1800 hasta la actualidad. Cuenta con un museo tematizado y vistas increíbles desde sus murallas.</p>
+                    <p><strong>Ubicación:</strong> Ubicado sobre la Colina Helen, lo que garantiza grandes vistas panorámicas en cualquier época del año.</p>
+                    <p><strong>Actividades:</strong> Visitas guiadas al museo histórico, fotografías con vista panorámica y charlas culturales.</p>
+                    <p><strong>¿Por qué visitarlo?</strong> Es el mejor lugar para comprender la historia de Valiandar y obtener un panorama amplio para planificar tus siguientes destinos.</p>
                 </article>
 
                 <article id="parque-vista-alegre">
-                            <h3>Parque Vista Alegre</h3>
-                            <img src="https://anpr.org.mx/wp-content/uploads/2025/09/Imagen2.jpg" alt="foto-parque-vista-alegre" width="800" height="534">
-                        <p>El Parque Vista Alegre es uno de los espacios verdes más populares de la ciudad. Ofrece áreas para deportes, zonas de descanso y caminos para pasear. Es ideal para familias y amigos que buscan disfrutar del aire libre.</p>
-                        <p><strong>Ubicación:</strong> Situado en el Barrio Vista Alegre, uno de los sectores más modernos de la ciudad.</p>
-                        <p><strong>Actividades:</strong> Paseos al aire libre, juegos infantiles y eventos culturales organizados por la comunidad.</p>
-                        <p><strong>¿Por qué visitarlo?</strong> Es un refugio natural en medio de la urbanización, perfecto para relajarse y desconectar del ruido urbano.</p>
+                    <h4>Parque Vista Alegre</h4>
+                    <img src="https://anpr.org.mx/wp-content/uploads/2025/09/Imagen2.jpg" alt="foto-parque-vista-alegre" width="800" height="534">
+                    <p>El Parque Vista Alegre es uno de los espacios verdes más populares de la ciudad. Ofrece áreas para deportes, zonas de descanso y caminos para pasear. Es ideal para familias y amigos que buscan disfrutar del aire libre.</p>
+                    <p><strong>Ubicación:</strong> Situado en el Barrio Vista Alegre, uno de los sectores más modernos de la ciudad.</p>
+                    <p><strong>Actividades:</strong> Paseos al aire libre, juegos infantiles y eventos culturales organizados por la comunidad.</p>
+                    <p><strong>¿Por qué visitarlo?</strong> Es un refugio natural en medio de la urbanización, perfecto para relajarse y desconectar del ruido urbano.</p>
                 </article>
-                <article id="puente-cortazar">
-                        <h3>Puente Cortazar</h3>
-                        <img src="https://media.istockphoto.com/id/533059072/es/foto/monta%C3%B1a-del-oso-puente-iluminado-por-la-noche.jpg?s=612x612&w=0&k=20&c=TwsI7sh60QXexGX0yl9hgHfahendFNwmqYP66AkgnQo=" alt="puente-cortazar" width="800" height="534">
-                        <p>Un puente peatonal de 180 metros que cruza el Río Vandal. Por las noches, su iluminación resalta toda la zona circundante, creando uno de los paisajes nocturnos más hermosos de la ciudad.</p>
-                        <p><strong>Ubicación:</strong> Conecta el Barrio Vista Alegre con el Centro Histórico, dos de las zonas más importantes de Valiandar.</p>
-                        <p><strong>Actividades:</strong> Caminatas nocturnas, fotografía, observación del río y espectáculos callejeros.</p>
-                        <p><strong>¿Por qué visitarlo?</strong> Es uno de los puntos más fotografiados y ofrece una vista panorámica espectacular sobre el río.</p>
-                </article>
-                <article id="monte-mirador">
-                        <h3>Mirador del Monte</h3>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mirador_Alto_Cochabamba.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="foto-mirador-del-monte" width="800" height="534">
-                        <p>Situado a más de 1.500 metros de altura, este mirador ofrece una vista completa de Valiandar y de las cadenas montañosas que la rodean.</p>
-                        <p><strong>Ubicación:</strong> Se ubica en los Bosques del Norte, sobre la ladera de la montaña.</p>
-                        <p><strong>Actividades:</strong> Muy visitado por amantes del senderismo y fotógrafos en busca de amaneceres únicos.</p>
-                        <p><strong>¿Por qué visitarlo?</strong> Es el punto panorámico más elevado de todo Valiandar y una visita obligada para quienes disfrutan de la naturaleza.</p>
-                </article>
-        </section>
-    </main>
-     <aside id="nav-lateral">
-        <section class="nav-lateral">
-            <h3>¿Que te interesa?</h3>
-            <nav>
-                <ul>
-                    <li><a href="#fuerte-bardegar">El Fuerte de Bardergar</a></li>
-                    <li><a href="#parque-vista-alegre">Parque Vista Alegre</a></li>
-                    <li><a href="#puente-cortazar">Puente Cortazar</a></li>
-                    <li><a href="#monte-mirador">Mirador del Monte</a></li>
-                </ul>
-            </nav>
-        </section>
 
-    </aside>
+                <article id="puente-cortazar">
+                    <h4>Puente Cortazar</h4>
+                    <img src="https://media.istockphoto.com/id/533059072/es/foto/monta%C3%B1a-del-oso-puente-iluminado-por-la-noche.jpg?s=612x612&w=0&k=20&c=TwsI7sh60QXexGX0yl9hgHfahendFNwmqYP66AkgnQo=" alt="puente-cortazar" width="800" height="534">
+                    <p>Un puente peatonal de 180 metros que cruza el Río Vandal. Por las noches, su iluminación resalta toda la zona circundante, creando uno de los paisajes nocturnos más hermosos de la ciudad.</p>
+                    <p><strong>Ubicación:</strong> Conecta el Barrio Vista Alegre con el Centro Histórico, dos de las zonas más importantes de Valiandar.</p>
+                    <p><strong>Actividades:</strong> Caminatas nocturnas, fotografía, observación del río y espectáculos callejeros.</p>
+                    <p><strong>¿Por qué visitarlo?</strong> Es uno de los puntos más fotografiados y ofrece una vista panorámica espectacular sobre el río.</p>
+                </article>
+
+                <article id="monte-mirador">
+                    <h4>Mirador del Monte</h4>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mirador_Alto_Cochabamba.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="foto-mirador-del-monte" width="800" height="534">
+                    <p>Situado a más de 1.500 metros de altura, este mirador ofrece una vista completa de Valiandar y de las cadenas montañosas que la rodean.</p>
+                    <p><strong>Ubicación:</strong> Se ubica en los Bosques del Norte, sobre la ladera de la montaña.</p>
+                    <p><strong>Actividades:</strong> Muy visitado por amantes del senderismo y fotógrafos en busca de amaneceres únicos.</p>
+                    <p><strong>¿Por qué visitarlo?</strong> Es el punto panorámico más elevado de todo Valiandar y una visita obligada para quienes disfrutan de la naturaleza.</p>
+                </article>
+            </section>
+
+            <section class="guias" id="guias">
+                <h3>Visitas guiadas por Valiandar</h3>
+                <h4>¡Descubrí Valiandar acompañado por un guía local!</h4>
+                <p>Con nuestras visitas guiadas podrás conocer los principales lugares históricos, descubrir historias y leyendas de la ciudad y probar algunas de las comidas tradicionales de la región.</p>
+                <ul>
+                    <li><a href="#">Camino Historico</a></li>
+                    <li><a href="#">Camino de Montaña</a></li>
+                    <li><a href="#">Valiandar Nocturna</a></li>
+                    <li><a href="#">Tour por Mirador</a></li>
+                </ul>
+                <h4>Actividades y Eventos</h4>
+                <p>Durante todo el año pueden encontrarse actividades como conciertos en plazas, exposiciones de arte, ferias gastronómicas, competencias deportivas y excursiones por los senderos de montaña.</p>
+            </section>
+        </main>
+
+        <aside id="nav-lateral">
+            <section class="nav-lateral">
+                <h3>¿Que te interesa?</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#fuerte-bardegar">El Fuerte de Bardegar</a></li>
+                        <li><a href="#parque-vista-alegre">Parque Vista Alegre</a></li>
+                        <li><a href="#puente-cortazar">Puente Cortazar</a></li>
+                        <li><a href="#monte-mirador">Mirador del Monte</a></li>
+                        <li><a href="#guias">Visitas guiadas</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
     </div>
-    <aside class="guias">
-        <h3>Visitas guiadas por Valiandar</h3>
-        <h4>¡Descubrí Valiandar acompañado por un guía local!</h4>
-        <p>Con nuestras visitas guiadas podrás conocer los principales lugares históricos, descubrir historias y leyendas de la ciudad y probar algunas de las comidas tradicionales de la región.</p>
-        <ul>
-            <li><a href="#">Camino Historico</a></li>
-            <li><a href="#">Camino de Montaña</a></li>
-            <li><a href="#">Valiandar Nocturna</a></li>
-            <li><a href="#">Tour por Mirador</a></li>
-        </ul>
-        <h4>Actividades y Eventos</h4>
-        <p>Durante todo el año pueden encontrarse actividades como conciertos en plazas, exposiciones de arte, ferias gastronómicas, competencias deportivas y excursiones por los senderos de montaña.</p>
-    </aside>
+
     <footer>
         <div class="footer">
-         <section class="contactos">
-            <h3>Contactos</h3>
-        <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
-        <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
-        <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
-         </section>
-        <section class="redes-sociales">
-            <h3>Redes Sociales</h3>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
-        </section>
-
+            <section class="contactos">
+                <h3>Contactos</h3>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">WhatsApp</a><br>
+                <a href="tel:+5491140203928" target="_blank" rel="noreferrer noopener">Telefono</a><br>
+                <a href="mailto:turismo@valiandar.com">turismo@valiandar.com</a>
+            </section>
+            <section class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a><br>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">Facebook</a><br>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer noopener">TikTok</a><br>
+            </section>
         </div>
-         <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
+        <span class="copyright"><em>&copy; 2026 Pagina Oficial de Turismo de la Ciudad Valiandar.</em></span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
