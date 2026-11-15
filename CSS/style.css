@@ -9,6 +9,9 @@
     --color-boton-hover: #5500b1;
     --alto-header: 5rem;
     --fuente-principal: Roboto, sans-serif;
+    --color-bg-body: #ffffff;      /* fondo de la página (antes se usaba --color-secundario) */
+    --color-link-hover: #dddddd;   /* hover de links del footer */
+    --color-detalle: rgba(0, 0, 0, 0.3);
 }
 
 *{
@@ -24,7 +27,8 @@ html{
 
 body{
     color: var(--color-texto);
-    background-color: var(--color-secundario);
+    background-color: var(--color-bg-body);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -58,12 +62,19 @@ header{
     color: var(--color-secundario);
 }
 
+.nav-principal{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .nav-principal ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 0.5rem;
     padding-left: 0;
+    margin: 0;            /* Bootstrap le pone margin-bottom a los <ul> y descentraba la nav */
 }
 
 .nav-principal a{
@@ -78,6 +89,40 @@ header{
 
 .nav-principal a:hover{
     border-bottom-color: var(--color-secundario);
+}
+
+/* Header en celular: logo + botón de tema arriba, links abajo */
+@media (max-width: 768px){
+    .header-content{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0.5rem 1rem;
+        row-gap: 0.25rem;
+    }
+
+    .nav-principal{
+        display: contents;   /* la lista y el botón pasan a ser hijos directos de .header-content */
+    }
+
+    .logo{
+        order: 1;
+        font-size: 1.4rem;
+    }
+
+    .theme-switch{
+        order: 2;
+    }
+
+    .nav-principal ul{
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-principal a{
+        padding: 0.4rem 0.3rem;
+        font-size: 0.8rem;
+    }
 }
 
 /* ---------- HERO ---------- */
@@ -139,7 +184,7 @@ header{
 }
 
 /* ---------- REDES FIJAS (derecha) ---------- */
-.redes-fijas{
+.redes-fijas {
     position: fixed;
     right: 0;
     top: 50%;
@@ -218,6 +263,7 @@ main section{
     background-color: var(--color-fondo);
     border-radius: 0.5rem;
     margin-bottom: 2rem;
+    transition: background-color 0.3s;
 }
 
 
@@ -264,6 +310,39 @@ img{
     border-radius: 0.5rem;
 }
 
+/* ---------- ACERCA DE LA CIUDAD: carousel + texto ---------- */
+.presentacion-grid{
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.carousel-presentacion{
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-presentacion .carousel-item img{
+    aspect-ratio: 1 / 1;      /* cuadrado, como en el boceto */
+    object-fit: cover;        /* recorta sin deformar las fotos */
+    border-radius: 0;
+}
+
+/* Flechas con sombra para que se vean sobre fotos claras (cielo, nubes) */
+.carousel-presentacion .carousel-control-prev-icon,
+.carousel-presentacion .carousel-control-next-icon{
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8));
+}
+
+/* En celular: el carousel arriba y el texto abajo */
+@media (max-width: 768px){
+    .presentacion-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ---------- FOOTER ---------- */
 footer{
     background-color: var(--color-principal);
@@ -287,11 +366,123 @@ footer{
 }
 
 .footer a:hover{
-    color: var(--color-fondo);
+    color: var(--color-link-hover);
 }
 
 .copyright{
     
     padding-bottom: 0.5rem;
     color: var(--color-secundario);
+}
+
+/* ---------- BOTÓN DE TEMA ---------- */
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.theme-switch__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.theme-switch__track {
+    position: relative;
+    display: block;
+    width: 68px;
+    height: 34px;
+    border-radius: 999px;
+    background-color: var(--color-principal);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.theme-switch__track::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #9d5020, #facc15);
+    box-shadow: 0 2px 6px var(--color-detalle);
+    content: "";
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.theme-switch__sun,
+.theme-switch__moon {
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.theme-switch__sun {
+    left: 9px;
+    fill: #fff;
+}
+
+.theme-switch__moon {
+    right: 9px;
+    fill: #000;
+    opacity: 0.6;
+}
+
+.theme-switch__input:checked + .theme-switch__track {
+    background-color: #71717a;
+}
+
+.theme-switch__input:checked + .theme-switch__track::after {
+    transform: translateX(34px);
+    background: #18181b;
+}
+
+.theme-switch__input:checked + .theme-switch__track .theme-switch__sun {
+    opacity: 0.6;
+}
+
+.theme-switch__input:checked + .theme-switch__track .theme-switch__moon {
+    fill: #fff;
+    opacity: 0.9;
+}
+
+.theme-switch__input:focus-visible + .theme-switch__track {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 3px;
+}
+
+/* ---------- TEMA OSCURO ----------
+   Solo se redefinen las variables. --color-secundario queda en blanco porque
+   se usa como color de TEXTO sobre el header, el footer y los botones. */
+[data-theme="oscuro"] {
+    --color-bg-body: #14111c;
+    --color-fondo: #231d33;
+    --color-texto: #ece8f5;
+    --color-principal: #3b1a73;
+    --color-barrita: #b98cff;
+    --color-boton: #7b2fe0;
+    --color-boton-hover: #9a55f0;
+    --color-link-hover: #cdb4ff;
+    --color-detalle: rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
+}
+
+[data-theme="oscuro"] main a {
+    color: #b98cff;
+}
+
+[data-theme="oscuro"] .boton {
+    color: #ffffff;
+}
+
+[data-theme="oscuro"] img {
+    filter: brightness(0.9);
 }
